@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #fcfcfc;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header {
+  margin: 5px 1px 75px;
+}
+
+.item {
+  width: 240px;
+  height: 400px;
+  margin: 15px 15px 15px 5px;
+  text-align: center;
+  line-height: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius:5px;
+  background-color: #fff;
+	border-color: #e1e1e1;
+  box-shadow: 3px 1px 5px -2px lightgrey;
+}
+
+.item:hover {
+	opacity: 0.7;
+}
+
+.item-img {
+	max-width:95%;
+	max-height:60%;
+  padding: 15px 0;
+  margin: 5px 0;
+}
+
+.item-name {
+  font-weight:400;
+  font-size:16px;
+  color:#333;
+}
+
+.item-link {
+	text-decoration: none;
+	max-width:100%;
+}
+
+.item-type h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  margin: 70px 16px 35px;
+}
+
+.item-price {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.item-btn {
+  position: relative;
+}
+
+.item-btn button {
+  background-color: #6199d9;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.item-btn button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #92aac5;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  height: 110px;
+  text-align: center;
+  padding: 3px;
+  background-color: #ffd974;
+  color: rgb(132, 132, 132);
+  line-height:30px;
+}
+
+footer p a{
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0;
+  color: #5f6167;
+}
+
+footer .social-icons a{
+  text-decoration: none;
+  font-size: 25x;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 25px;
+  color: #7d7d7d;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+footer .social-icons a span{
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer .social-icons a:hover{
+  opacity: 0.5;
+  color: #453293;
+  transform: translateY(-5px);
+}
+
+.welcome{
+  width: 568px;
+  /* text-align: center; */
+}
+
+.welcome p{
+  text-align: center;
+  /* display: block; */
+  margin-bottom: 20px;
+}
+.welcome h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.owner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.owner > div {
+  max-width: 524px
+}
+
+.middle{
+  width: 70px;
+}
+
+.avatar img {
+  width: 144px;
+  height: 144px;
+  border-radius: 50% ;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.name{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.description{
+  width: 568px
+}
+
+.description p {
+  text-align: center;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0
+}
+
+.description h2 {
+  text-align: center;
+}
+
+.contact{
+  width: 568px;
+}
+
+.contact p {
+  text-align: left;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.contact h2 {
+  text-align: left;
+}
+
+.contact p a{
+  text-decoration: none;
+}
+
+
+.contact p i {
+  color: #cfaf2e;
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.detail-img {
+  width: 300px
+}
+
+.detail-info {
+  text-align: center;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media(min-width: 1024px) {
+  .owner > div {
+      max-width: 768px
+  }
+}
+@media(min-width: 524px) {
+  .owner.author {
+      float: right;
+      margin: 8px-40px 0 32px;
+      max-width: 176px;
+      word-wrap: break-word
+  }
+}
+@media(min-width: 1280px) {
+  .owner.author {
+      margin: 8px-64px 0 32px;
+      max-width: 208px
+  }
+}
+@media(max-width: 524px) {
+  .detail-container.detail-info {
+      float: right;
+      margin: 8px-40px 0 32px;
+      word-wrap: break-word
+  }
+}
+@media(max-width: 658px) {
+  .middle {
+      width: 0;
+  }
+}
+

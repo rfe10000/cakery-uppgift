@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("../img/menu.jpg");
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+/*
+Now for the responsive part, it is more common to add 3 images, 1 for each resolution 
+you want and to set each image according to a @media query you will set.
+*/       
+/* @media (max-width: 1200px) {
+    .bg-img {
+        background-image: url("../img/menu600.png");
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-img {
+        background-image: url("../img/menu300.png");
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-img {
+        background-image: url("../img/menu150.png");
+    }
+} */
+
+/* Position the navbar container inside the image */
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 14px 16px;
+}
+
+.topnav a:hover {
+    background-color: #eee;
+    color: black;
+}
